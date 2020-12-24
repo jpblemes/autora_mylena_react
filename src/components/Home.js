@@ -2,7 +2,6 @@ import React from 'react';
 import Maincontent from './Maincontent';
 import Iconlist from './Iconlist';
 import Readerlist from './Readerlist';
-import Footer from './Footer';
 
 const readers = [
     {

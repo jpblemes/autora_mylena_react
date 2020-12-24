@@ -12,7 +12,7 @@ const Maincontent = () => {
                     <h4>Uma fantasia New Adult</h4>
                 </div>
                 <div className="description">
-                <img className="right floated small ui image" src={phone}/>
+                <img className="right floated small ui image" alt="New book in a smarthpone" src={phone}/>
                 <br></br>
                 <p>Uma bela de uma Ladra convencida teve o seu destino roubado de suas mãos.</p>
                 <p>Áquila não é quem diz ser e Isabelle não é quem pensou que fosse. Nessa luta de opostos, quem irá vencer: A honra ou o amor?</p>
