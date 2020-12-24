@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Route from './components/Route';
+import Header from './components/Header';
+import Home from './components/Home';
+import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export default () => {
+    const logo = {
+        url: './images/mylena.png',
+        alt: 'Logo do site'
+    }
+    return (
+        <div>
+            <img class="ui centered medium image" src={logo.url} alt={logo.alt}></img>
+            <Header />
+            <Route path="/">
+                <Home />
+            </Route>
+            <Route path="/sobremim">
+                <Home />
+            </Route>
+            <Footer/>
+            
+        </div>
+        
+        
+    );
+};
