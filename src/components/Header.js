@@ -7,13 +7,13 @@ const Header = () => {
             <Link href="/" className="item">
                 Home
             </Link>
-            <Link href="/" className="item">
+            <Link href="/meuslivros" className="item">
                 Meus livros
             </Link>
             <Link href="/sobremim" className="item">
                 Sobre mim
             </Link>
-            <Link href="/sobremim" className="item">
+            <Link href="/extras" className="item">
                 Extras
             </Link>
         </div>

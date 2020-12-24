@@ -17,7 +17,13 @@ const logo = {
             <Route path="/">
                 <Home />
             </Route>
+            <Route path="/meuslivros">
+                <Home />
+            </Route>
             <Route path="/sobremim">
+                <Home />
+            </Route>
+            <Route path="/extras">
                 <Home />
             </Route>
             <Footer/>
