@@ -16,7 +16,7 @@ const Sobremim = () => {
                         alt={mylenaphoto.alt}
                     />
                     <div className="content">
-                        <a className="header">Mylena Aladim</a>
+                        <p className="header">Mylena Aladim</p>
                         <div className="description">
                             Autora
                         </div>
