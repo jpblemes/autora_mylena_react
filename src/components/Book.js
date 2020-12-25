@@ -2,20 +2,20 @@ import React from 'react';
 
 const Book = ({book}) => {
     return (
-        <div class="ui card">
-            <div class="ui centered small image">
-                <img style={{margin: '10px'}} src={book.imageurl} />
+        <div className="ui card">
+            <div className="ui centered small image">
+                <img style={{padding: '10px'}} src={book.imageurl} alt={book.alt} />
             </div>
-            <div class="content">
-                <a class="header">{book.title}</a>
-                <div class="meta">
+            <div className="content">
+                <h4 className="header">{book.title}</h4>
+                <div className="meta">
                     <span>{book.autora}</span>
                 </div>
-                <div style={{color: 'black'}}class="description">
+                <br/>
+                <div style={{color: 'black'}}className="description">
                     {book.description}
                 </div>
             </div>
-
         </div>
     );
 }
