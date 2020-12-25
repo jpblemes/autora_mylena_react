@@ -5,12 +5,14 @@ const Iconlist = (props) => {
     const icons = props.icons.map((icon) => {
         return(
             <div key={icon.id} className="four wide column">
-                <img 
-                    className="ui image"  
-                    src={icon.location} 
-                    alt={icon.alt} 
-                    href={icon.href}
-                />
+                <a href={icon.href}>
+                    <img 
+                        className="ui image"  
+                        src={icon.location} 
+                        alt={icon.alt}  
+                    />
+                </a>
+                
             </div>
 
         );

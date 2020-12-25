@@ -1,15 +1,23 @@
 import React from 'react';
 
-function Footer({ children }) {
+const contact = {
+    email: 'mylena@mail',
+    number: '(xx) xxxxx-xxxx'
+}
+
+function Footer() {
     return (
-        <React.Fragment>
-            <div className="ui inverted vertical footer segment">
+        <div style={{paddingTop: '10em'}}>
+            <div 
+                style={{position: 'relative', bottom: '0', width: '100%'}} 
+                className="ui inverted vertical footer segment"
+            >
                 <div className="ui inverted menu">
                     <div className="right menu">
                         <div style={{marginRight: '25px'}}>
                             <h4>Contato:</h4>
-                            <p>mylena@mail</p>
-                            <p>(xx) xxxxx-xxxx</p>
+                            <p>{contact.email}</p>
+                            <p>{contact.number}</p>
                         </div>  
                     </div>    
                 </div>
@@ -17,7 +25,7 @@ function Footer({ children }) {
             <div className="ui vertical footer segment">
                 <h4 style={{textAlign: 'center'}}>© 2021 - Mylena Aladim</h4> 
             </div>
-        </React.Fragment>
+        </div>
         
     );
 }

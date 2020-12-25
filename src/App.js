@@ -3,6 +3,7 @@ import Route from './components/Route';
 import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import Booklist from './components/Booklist';
 
 const logo = {
     url: './images/mylena.png',
@@ -18,7 +19,8 @@ const logo = {
                 <Home />
             </Route>
             <Route path="/meuslivros">
-                <Home />
+                <br/>
+                <Booklist />
             </Route>
             <Route path="/sobremim">
                 <Home />
@@ -26,6 +28,7 @@ const logo = {
             <Route path="/extras">
                 <Home />
             </Route>
+            <br/>
             <Footer/>
             
         </div>
