@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Booklist from './components/Booklist';
+import Sobremim from './components/Sobremim';
 
 const logo = {
     url: './images/mylena.png',
@@ -23,7 +24,8 @@ const logo = {
                 <Booklist />
             </Route>
             <Route path="/sobremim">
-                <Home />
+                <br/>
+                <Sobremim />
             </Route>
             <Route path="/extras">
                 <Home />
