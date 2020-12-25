@@ -1,5 +1,4 @@
 import React from 'react';
-import '../css/Maincontent.css';
 
 const Maincontent = () => {
     const phone = '../images/smartphonebook2.png';
@@ -36,7 +35,7 @@ const Maincontent = () => {
                     </div>
                 </div>
                 <br/>
-                <div className="ui centered card">
+                <div style={{backgroundColor: '#f4e1d2'}}className="ui centered card">
                     <div className="content">
                         <div className="header">Adquira o e-book!</div>
                         <br/>
