@@ -5,7 +5,8 @@ const Book = ({book}) => {
 
     const titlestyle = {
         textAlign: 'center',
-        fontSize: '18px'
+        fontSize: '16px',
+        marginTop: '3px',
     }
     return (
         <div style={{backgroundColor: 'transparent', boxShadow: 'none'}} className="ui black card">
@@ -16,9 +17,9 @@ const Book = ({book}) => {
                         alt={book.alt} 
                     />
                 </Link>
-                <Link to={'/' + (book.id).toString()} className="content">
-                    <span style={titlestyle} className="header">{book.title}</span>
-                </Link> 
+                <div style={titlestyle}>
+                    <h4 className="header">{book.title}</h4>
+                </div> 
             </Router> 
         </div>
     );
