@@ -35,9 +35,7 @@ const Sobremim = () => {
 
     const aboutmylena = allabout.map((about) => {
         return(
-            <React.Fragment key={about.id}>
-                <p>{about.text}</p>
-            </React.Fragment>
+            <p key={about.id}>{about.text}</p>
         );
     });
 
@@ -59,7 +57,7 @@ const Sobremim = () => {
                                 alt={mylena.alt}
                             />
                         </div>
-                        <p>{aboutmylena}</p>
+                        <div>{aboutmylena}</div>
                     </div>
                 </div>
             </div>   
