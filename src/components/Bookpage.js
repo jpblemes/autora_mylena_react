@@ -28,27 +28,27 @@ const Bookpage = ({book}) => {
                             <button 
                                 style={{margin: '1px 0',}} 
                                 class="ui violet button">
-                                <i class="circular inverted amazon icon"></i> 
+                                <i className="circular inverted amazon icon"></i> 
                                 Adquira
                             </button>
                             <button 
                                 style={{margin: '1px 0',}} 
-                                class="ui violet button">
+                                className="ui violet button">
                                 Teaser
                             </button>
                             <button 
                                 style={{margin: '1px 0',}} 
-                                class="ui violet button">
+                                className="ui violet button">
                                 Resenhas
                             </button>
                             <button 
                                 style={{margin: '1px 0',}} 
-                                class="ui violet button">
+                                className="ui violet button">
                                 Leia o 1º capítulo
                             </button>
                             <button 
                                 style={{margin: '1px 0',}} 
-                                class="ui violet button">
+                                className="ui violet button">
                                 Skoob
                             </button>
                         </div>
