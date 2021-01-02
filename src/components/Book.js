@@ -5,13 +5,16 @@ const Book = ({book}) => {
 
     const titlestyle = {
         textAlign: 'center',
-        fontSize: '20px'
+        fontSize: '18px'
     }
     return (
-        <div style={{backgroundColor: '#FFF0F5'}} className="ui card">
+        <div style={{backgroundColor: 'transparent', boxShadow: 'none'}} className="ui black card">
             <Router>
-                <Link to={'/' + (book.id).toString()} className="ui centered medium image">  
-                    <img style={{padding: '10px'}} src={book.imageurl} alt={book.alt} />
+                <Link to={'/' + (book.id).toString()} className="ui centered small image">  
+                    <img 
+                        src={book.imageurl} 
+                        alt={book.alt} 
+                    />
                 </Link>
                 <Link to={'/' + (book.id).toString()} className="content">
                     <span style={titlestyle} className="header">{book.title}</span>
