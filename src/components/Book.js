@@ -9,7 +9,7 @@ const Book = ({book}) => {
         marginTop: '3px',
     }
     return (
-        <div style={{backgroundColor: 'transparent', boxShadow: 'none'}} className="ui black card">
+        <div style={{backgroundColor: 'transparent', boxShadow: 'none', marginTop: '20px'}} className="ui black card">
             <Router>
                 <Link to={'/' + (book.id).toString()} className="ui centered small image">  
                     <img 
