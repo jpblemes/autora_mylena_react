@@ -27,7 +27,7 @@ const Bookpage = ({book}) => {
                             />
                             <button 
                                 style={{margin: '1px 0',}} 
-                                class="ui violet button">
+                                className="ui violet button">
                                 <i className="circular inverted amazon icon"></i> 
                                 Adquira
                             </button>

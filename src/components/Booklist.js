@@ -8,8 +8,8 @@ const Booklist = ({allbooks}) => {
     const books = allbooks.map((book) => {
         const bookhref = '/' + (book.id).toString();
         return(
-            <Router>
-                <Book  key={book.id} book={book}/>
+            <Router key={book.id}>
+                <Book book={book}/>
                 <div>
                     <Route 
                         path={bookhref} 
