@@ -55,8 +55,8 @@ function Footer() {
                     </div>    
                 </div>
             </div>
-            <div style={{backgroundColor: '#FFF0F5'}} className="ui vertical footer segment">
-                <h4 style={{textAlign: 'center'}}>© 2021 Mylena Aladim. Todos os direitos reservados</h4> 
+            <div style={{backgroundColor: '#ededed'}} className="ui vertical footer segment">
+                <h4 style={{textAlign: 'center'}}>© 2021 Mylena Aladim</h4> 
             </div>
         </div>
         

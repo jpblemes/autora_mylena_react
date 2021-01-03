@@ -20,7 +20,6 @@ const Maincontent = () => {
     }
     return(
         <div className="ui container">
-        <br/>
         <div style={bgstyle} className="ui fluid card">
             <div className="content">
                 
@@ -35,7 +34,7 @@ const Maincontent = () => {
                     </div>
                     <div>
                         <div style={titlestyle}className="header">
-                            <h2>A Rebelde de Dois Mundos</h2>
+                            <h2 style={{color: '#F8F8FF'}} >A Rebelde de Dois Mundos</h2>
                         </div>
                         <br/><br/>
                         <div style={textstyle}>
@@ -44,7 +43,7 @@ const Maincontent = () => {
                             <p style={{color: '#F8F8FF'}}>Nessa luta de opostos, quem irá vencer: A honra ou o amor?</p>
                         </div>
                         <br/>
-                        <div style={{backgroundColor: '#FFF0F5'}} className="ui centered card">
+                        <div style={{backgroundColor: '#cbbce6'}} className="ui centered card">
                             <div className="content">
                                 <div className="header">Adquira o e-book!</div>
                                 <br/>

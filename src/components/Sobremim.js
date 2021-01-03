@@ -42,7 +42,7 @@ const Sobremim = () => {
     return(
         <div className="ui container">
             <br/>
-            <div style={{backgroundColor: '#FFF0F5'}} className="ui fluid card">
+            <div style={{backgroundColor: '#cbbce6'}} className="ui fluid card">
                 <div className="content">
                     <div style={titlestyle}className="header">
                         <h2>Sobre mim</h2>

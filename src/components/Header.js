@@ -4,18 +4,18 @@ import { HashRouter as Router, Link } from 'react-router-dom';
 const Header = () => {
     return (
         <Router>
-            <div style={{backgroundColor: '#FFF0F5'}} className="ui four item menu">
+            <div style={{backgroundColor: 'transparent'}} className="ui four item menu">
                 <Link to="/" className="item">
-                    Home
+                    <b>Home</b>
                 </Link>
                 <Link to="/meuslivros" className="item">
-                    Meus livros
+                    <b>Meus livros</b>
                 </Link>
                 <Link to="/sobremim" className="item">
-                    Sobre mim
+                    <b>Sobre mim</b>
                 </Link>
                 <Link to="/extras" className="item">
-                    Extras
+                    <b>Extras</b>
                 </Link>
             </div>
         </Router>

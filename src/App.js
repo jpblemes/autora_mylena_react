@@ -12,14 +12,6 @@ const logo = {
     alt: 'Logo do site'
 }
 
-const mainbg = '../images/mainbg.png';
-const mainbgstyle = { 
-    backgroundImage: `url(${mainbg})`,
-    backgroundSize: 'cover', 
-    backgroundPosition: 'center center',
-    backgroundRepeat: 'repeat',
-}
-
 const allbooks = [
 
     {
@@ -75,7 +67,7 @@ const allbooks = [
         <Router>
             <img className="ui centered medium image" src={logo.url} alt={logo.alt}></img>
             <Header />
-                <div style={mainbgstyle}>
+                <div style={{backgroundColor: '#ededed'}}>
                     <br/>
                     <Route path="/" exact component={Home}/>
                     <Route 

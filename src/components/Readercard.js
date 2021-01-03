@@ -2,7 +2,7 @@ import React from 'react';
 
 const Readercard = ({reader}) => {
     return (
-            <div style={{backgroundColor: '#FFF0F5'}}className="ui fluid card">
+            <div style={{backgroundColor: '#cbbce6'}}className="ui fluid card">
                 <div className="content">
                     <div className="center aligned">
                         <img 
