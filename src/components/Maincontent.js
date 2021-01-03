@@ -22,12 +22,11 @@ const Maincontent = () => {
         <div className="ui container">
         <div style={bgstyle} className="ui fluid card">
             <div className="content">
-                
                 <br/><br/>
                 <div className="description">
                     <div className="ui right floated vertical buttons bookmenu">
                         <img 
-                            className="marginPhoto right floated small ui image" 
+                            className="marginPhoto small ui image" 
                             src={phone}
                             alt='Smartphone with the book on screen'
                         />
