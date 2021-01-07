@@ -1,4 +1,5 @@
 import React from 'react';
+import Bookcarousel from './Bookcarousel';
 
 const mylena = {
     src: "../images/mylenaphoto.png", 
@@ -60,7 +61,15 @@ const Sobremim = () => {
                         <div>{aboutmylena}</div>
                     </div>
                 </div>
-            </div>   
+            </div>
+            <br/>
+            <br/>
+            <h1 style={{textAlign: 'center'}}>Obras disponíveis:</h1>
+            <br/>
+            <div style={{width: '90%'}} className="ui container">
+                <Bookcarousel/>
+            </div>
+            
         </div>
         
     ); 

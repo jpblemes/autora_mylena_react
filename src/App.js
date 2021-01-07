@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Booklist from './components/Booklist';
 import Sobremim from './components/Sobremim';
 import Bookpage from './components/Bookpage';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 const logo = {
     url: './images/mylena.png',
@@ -78,7 +79,7 @@ const allbooks = [
                     <Route path="/sobremim" exact component={Sobremim}/>
                     <Route path="/extras" exact component={Home}/>
                     {bookpages}
-                    <br/><br/><br/><br/><br/><br/><br/>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
             <Footer/>
         </Router>
