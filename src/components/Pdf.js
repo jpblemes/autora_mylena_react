@@ -47,12 +47,14 @@ const Pdf = ({pdfurl}) => {
                 <button><i className="search plus icon"/></button>
             )
         }
-        let resetButton = <button onClick={() => {setScale(1.5); setPage(1);}}><i className="undo icon"/></button>
+        let resetButton = <button onClick={() => {setScale(1.5)}}><i className="undo icon"/></button>
+        let pageLabel = <button readonly >{page}/{pages}</button>
         return (
             <nav style={{textAlign: 'center'}}>
                 <ul style={{display: 'inline-block',listStyleType: 'none'}}>
                     {previousButton}
                     {nextButton}
+                    {pageLabel}
                     {scalePlusButton}
                     {scaleMinusButton}
                     {resetButton}
@@ -84,6 +86,7 @@ const Pdf = ({pdfurl}) => {
 
     return (
         <div className="ui container">
+            {renderPagination()}
             <div style={horizontalScroll}>
                 {loading && <span><i className="spinner loading icon"></i>Loading...</span>}
                 <canvas style={{margin: 'auto', display: 'block'}} ref={canvasEl} />
