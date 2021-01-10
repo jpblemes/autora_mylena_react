@@ -1,8 +1,16 @@
 import React from 'react';
 
 const Readercard = ({reader}) => {
+
+    const style = {
+        backgroundColor: '#cbbce6',
+        boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
+        WebkitBoxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
+        MozBoxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
+    }
+
     return (
-            <div style={{backgroundColor: '#cbbce6'}}className="ui fluid card">
+            <div style={style}className="ui fluid card">
                 <div className="content">
                     <div className="center aligned">
                         <img 
