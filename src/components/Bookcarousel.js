@@ -2,8 +2,15 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import Maincontent from './Maincontent';
-const Bookcarousel = () => {
+import Bookcard from './Bookcard';
+const Bookcarousel = ({allbooks}) => {
+
+    const bookcards = allbooks.map((book) => {
+        return(
+            <Bookcard key={book.id} book={book}/>
+        )
+    });
+
     return (
         <div>
             <Carousel 
@@ -15,15 +22,7 @@ const Bookcarousel = () => {
                 interval={5000}
                 thumbWidth={0}
             >
-                <div>
-                    <Maincontent/>
-                </div>
-                <div>
-                    <Maincontent/>
-                </div>
-                <div>
-                    <Maincontent/>
-                </div>
+                {bookcards}
             </Carousel>
         </div>
 

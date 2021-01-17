@@ -27,7 +27,14 @@ const allabout =[
     },
 ]
 
-const Sobremim = () => {
+const style = {
+    backgroundColor: '#cbbce6',
+    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+    WebkitBoxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
+    MozBoxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
+}
+
+const Sobremim = ({allbooks}) => {
 
     const titlestyle = {
         textAlign: 'center',
@@ -36,14 +43,14 @@ const Sobremim = () => {
 
     const aboutmylena = allabout.map((about) => {
         return(
-            <p key={about.id}>{about.text}</p>
+            <p style={{textAlign: 'justify', textJustify: 'inter-word', fontSize: '15px'}} key={about.id}>{about.text}</p>
         );
     });
 
     return(
         <div className="ui container">
             <br/>
-            <div style={{backgroundColor: '#cbbce6'}} className="ui fluid card">
+            <div style={style} className="ui fluid card">
                 <div className="content">
                     <div style={titlestyle}className="header">
                         <h2>Sobre mim</h2>
@@ -52,7 +59,7 @@ const Sobremim = () => {
                     <div className="description">
                         <div className="ui right floated vertical buttons bookmenu">
                             <img 
-                                style={{margin: '1px',}} 
+                                style={{margin: '1px', marginLeft: '3px'}} 
                                 className="right floated small ui image" 
                                 src={mylena.src}
                                 alt={mylena.alt}
@@ -61,15 +68,15 @@ const Sobremim = () => {
                         <div>{aboutmylena}</div>
                     </div>
                 </div>
+                <br/><br/>
             </div>
             <br/>
             <br/>
             <h1 style={{textAlign: 'center'}}>Obras disponíveis:</h1>
             <br/>
             <div style={{width: '90%'}} className="ui container">
-                <Bookcarousel/>
+                <Bookcarousel allbooks={allbooks}/>
             </div>
-            
         </div>
         
     ); 
