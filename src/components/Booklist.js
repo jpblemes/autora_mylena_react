@@ -21,7 +21,7 @@ const Booklist = ({allbooks}) => {
             <Router key={book.id}>
                 <Book book={book}/>
                 <div>
-                    {bookpageroute}
+                    {bookpageroute()}
                 </div>
             </Router>
         );

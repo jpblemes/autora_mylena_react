@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/Maincontent.css';
-import { HashRouter as Router, Link } from 'react-router-dom';
 
 const Maincontent = () => {
     const phone = '../images/smartphonebook2.png';
