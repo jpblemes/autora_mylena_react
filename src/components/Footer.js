@@ -2,8 +2,7 @@ import React from 'react';
 import Iconlist from './Iconlist';
 
 const contact = {
-    email: 'mylena@mail',
-    number: '(xx) xxxxx-xxxx'
+    email: 'mylena.andre.cunha@gmail.com',
 }
 
 const socialmedia = [
@@ -50,7 +49,7 @@ function Footer() {
                         <div style={{marginRight: '25px'}}>
                             <h4>Contato:</h4>
                             <p>{contact.email}</p>
-                            <p>{contact.number}</p>
+                            <br/>
                         </div>  
                     </div>    
                 </div>

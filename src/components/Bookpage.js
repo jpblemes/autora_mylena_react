@@ -31,16 +31,35 @@ const Bookpage = ({book}) => {
         }
     }
 
-    const summarybutton = () => {
-        if(book.summaryurl !== ''){
+    const pinterestbutton = () => {
+        if(book.amazonurl !== ''){
             return(
-                <a href={book.summaryurl} target="_blank"  rel="noreferrer" className="item">
+                <a href={book.pinteresturl} target="_blank"  rel="noreferrer" className="item">
                     <button 
-                        style={{margin: '1px 0',}} 
+                        style={{margin: '1px 0'}} 
                         className="ui violet button">
-                        Resenhas
+                        <i className="circular inverted pinterest icon"></i> 
+                        Pinterest
                     </button>
                 </a>
+            )
+        }else{
+            return null;
+        }
+    }
+
+    const summarybutton = () => {
+        if(book.readerssummary === true){
+            return(
+                <Router>
+                    <Link to={`${book.nameurl}-summary`} className="item">    
+                        <button 
+                            style={{margin: '1px 0',}} 
+                            className="ui violet button">
+                            Resenhas
+                        </button>
+                    </Link>
+                </Router>
             )
         }else{
             return null;
@@ -118,9 +137,12 @@ const Bookpage = ({book}) => {
                             {pdfbutton()}
                             {skoobButton()}
                             {wattpadButton()}
+                            {pinterestbutton()}
                         </div>
                         <h3 style={{textAlign: 'center'}}>{book.extra}</h3>
-                        <p style={{textAlign: 'justify', textJustify: 'inter-word', fontSize: '15px'}}>{book.summary}</p>
+                        <p style={{textAlign: 'justify', textJustify: 'inter-word', fontSize: '15px'}}>
+                            {book.summary}
+                        </p>
                     </div>
                 </div>
                 <br/><br/><br/>

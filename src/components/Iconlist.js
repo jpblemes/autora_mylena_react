@@ -4,7 +4,7 @@ const Iconlist = (props) => {
 
     const icons = props.icons.map((icon) => {
         return(
-            <a key= {icon.id} href={icon.href}>
+            <a key= {icon.id} href={icon.href} target="_blank"  rel="noreferrer">
                 <img 
                     className="ui circular image"  
                     src={icon.location} 

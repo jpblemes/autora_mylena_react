@@ -1,12 +1,12 @@
 import React from 'react';
 import Readercard from './Readercard';
 
-const ReaderList = (props) => {
-    const readers = props.readers.map((reader) => {
+const Readerlist = ({readers}) => {
+    const allreaders = readers.map((reader) => {
         return <Readercard  key={reader.id} reader={reader}/>
     });
 
-    return <div className="ui container three doubling stackable cards">{readers}</div>
+    return <div className="ui container three doubling stackable cards">{allreaders}</div>
 }
 
-export default ReaderList;
+export default Readerlist;

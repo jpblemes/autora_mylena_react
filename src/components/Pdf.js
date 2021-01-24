@@ -4,7 +4,7 @@ import { usePdf } from 'react-pdf-js';
 const Pdf = ({pdfurl}) => {
     const [page, setPage] = useState(1);
     const [pages, setPages] = useState(null);
-    const [scale, setScale] = useState(1.5);
+    const [scale, setScale] = useState(1.0);
 
     const renderPagination = () => {
         if (!pages) {
@@ -47,8 +47,8 @@ const Pdf = ({pdfurl}) => {
                 <button><i className="search plus icon"/></button>
             )
         }
-        let resetButton = <button onClick={() => {setScale(1.5)}}><i className="undo icon"/></button>
-        let pageLabel = <button readonly >{page}/{pages}</button>
+        let resetButton = <button onClick={() => {setScale(1.0)}}><i className="undo icon"/></button>
+        let pageLabel = <button readOnly >{page}/{pages}</button>
         return (
             <nav style={{textAlign: 'center'}}>
                 <ul style={{display: 'inline-block',listStyleType: 'none'}}>
