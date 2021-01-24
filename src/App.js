@@ -11,17 +11,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import Extra from './components/Extra';
 import Booksummary from './components/Booksummary';
 
-const meta = {
-    title: 'Mylena Aladim',
-    description: 'Website das obras da autora Mylena Aladim',
-    canonical: 'http://www.mylenaaladim.com.br',
-    meta: {
-        charset: 'utf-8',
-        name: {
-            keywords: 'mylena aladim,ladra de dois mundos,rebelde de dois mundos,leis do acaso,fantasia,romance'
-        }
-    }
-}
 const logo = {
     url: './images/mylena.png',
     alt: 'Logo do site'
