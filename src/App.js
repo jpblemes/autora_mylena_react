@@ -143,6 +143,7 @@ const allbooks = [
         readerssummary: true,
         skooburl: 'https://www.skoob.com.br/share/book/990387/991908',
         pinteresturl: 'https://pin.it/Q76uuKA',
+        spotfyurl: 'https://open.spotify.com/playlist/4jFegjczw6ipB3Xjg41cg9?si=8-Piq8LkSAu3wi4CgLopjw',
     },
     {
         id: 2,
@@ -161,6 +162,7 @@ const allbooks = [
         readerssummary: true,
         skooburl: 'https://www.skoob.com.br/share/book/11694785/11708656',
         pinteresturl: 'https://pin.it/Q76uuKA',
+        spotfyurl: 'https://open.spotify.com/playlist/4jFegjczw6ipB3Xjg41cg9?si=8-Piq8LkSAu3wi4CgLopjw',
     },
     {
         id: 3,
@@ -178,6 +180,7 @@ const allbooks = [
         amazonurl: 'https://www.amazon.com.br/As-Leis-Acaso-Conto-Amor-ebook/dp/B087ZSCNBG',
         readerssummary: true,
         skooburl: 'https://www.skoob.com.br/share/book/11680095/11695407',
+        spotfyurl: '',
     },
     {
         id: 4,
@@ -201,6 +204,7 @@ const allbooks = [
         amazonurl: '',
         readerssummary: false,
         skooburl: '',
+        spotfyurl: '',
     },
 ];
 

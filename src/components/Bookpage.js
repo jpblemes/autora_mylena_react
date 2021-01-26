@@ -48,6 +48,22 @@ const Bookpage = ({book}) => {
         }
     }
 
+    const spotfybutton = () => {
+        if(book.spotfyurl !== ''){
+            return(
+                <a href={book.spotfyurl} target="_blank"  rel="noreferrer" className="item">
+                    <button 
+                        style={{margin: '1px 0'}} 
+                        className="ui violet button">
+                        Playlist Spotfy
+                    </button>
+                </a>
+            )
+        }else{
+            return null;
+        }
+    }
+
     const summarybutton = () => {
         if(book.readerssummary === true){
             return(
@@ -138,6 +154,7 @@ const Bookpage = ({book}) => {
                             {skoobButton()}
                             {wattpadButton()}
                             {pinterestbutton()}
+                            {spotfybutton()}
                         </div>
                         <h3 style={{textAlign: 'center'}}>{book.extra}</h3>
                         <p style={{textAlign: 'justify', textJustify: 'inter-word', fontSize: '15px'}}>
