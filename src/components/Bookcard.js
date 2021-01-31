@@ -6,7 +6,7 @@ const Bookcard = ({book}) => {
 
     const titlestyle = {
         textAlign: 'center',
-        fontSize: '20px'
+        fontSize: '18px'
     }
     const textstyle = {
         textAlign: 'center',
@@ -15,8 +15,7 @@ const Bookcard = ({book}) => {
     return(
         <div className="ui container">
         <div style={{backgroundColor: '#cbbce6'}} className="ui fluid card">
-            <div className="content">
-                <br/><br/>
+            <div style={{marginTop: '20px'}} className="content">
                 <div className="description">
                     <div className="ui right floated vertical buttons bookmenu">
                         <img 
@@ -29,23 +28,23 @@ const Bookcard = ({book}) => {
                         <div style={titlestyle}className="header">
                             <h2>{book.title}</h2>
                         </div>
-                        <br/><br/>
+                        <br/>
                         <div style={textstyle}>
-                            <p style={{fontSize: '18px'}}>{book.subtitle}</p>
+                            <p style={{fontSize: '16px'}}>{book.subtitle}</p>
                         </div>
-                        <br/><br/><br/>
-                        <div className="content">
+                        <div style={{marginTop: '20px'}}>
                             <Router>
                                 <Link to={book.nameurl}>
-                                    <button className="ui violet button">
+                                    <button style={{marginTop: '40px'}} className="ui violet button">
                                         <i className="circular inverted book icon"></i> 
                                         Conheça este e-book!
                                     </button>
                                 </Link>
                             </Router>
                         </div>
+                        <br/><br/><br/><br/>
                     </div>
-                    <br/><br/><br/><br/>
+
                 </div>
             </div>
         </div>   

@@ -1,3 +1,6 @@
+.carousel .slide{ 
+     background: none !important;
+}
 
 @media (min-width: 670px)
 {
@@ -7,3 +10,4 @@
         margin-bottom: 1rem;
    }
 }
+
