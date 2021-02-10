@@ -12,23 +12,19 @@ const Pdf = ({pdfurl, setLoading}) => {
             return null;
         }
         let previousButton =(
-            <button onClick={() => setPage(page - 1)}>
-                <i className="arrow circle left icon"/>
-            </button>
+            <button onClick={() => setPage(page - 1)}>{'<'}</button>
         ); 
         if (page === 1) {
             previousButton = (
-                <button><i className="arrow circle left icon"/></button>
+                <button>{'<'}</button>
             );
         }
         let nextButton =(
-            <button onClick={() => setPage(page + 1)}>
-                <i className="arrow circle right icon"/>
-            </button>
+            <button onClick={() => setPage(page + 1)}>{'>'}</button>
         ); 
         if (page === pages) {
             nextButton = (
-                <button><i className="arrow circle right icon"/></button>
+                <button>{'>'}</button>
             );
         }
         let scalePlusButton = <button onClick={() => setScale(scale + 0.1)}><i className="search plus icon"/></button>
