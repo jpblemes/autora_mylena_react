@@ -28,6 +28,7 @@ const readers = [
 ];
 
 const Home = () => {
+      
     return(
         <div className="ui center aligned container">
             <br/>
