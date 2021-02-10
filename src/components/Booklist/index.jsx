@@ -1,5 +1,5 @@
 import React from 'react';
-import Book from './Book';
+import Book from '../Book/';
 import { HashRouter as Router } from 'react-router-dom';
 
 const Booklist = ({allbooks}) => {

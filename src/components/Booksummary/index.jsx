@@ -1,5 +1,5 @@
 import React from 'react';
-import Summarycardlist from './Summarycardlist';
+import Summarycardlist from '../Summarycardlist';
 
 const Booksummary = ({booksummaries}) => {
     return(

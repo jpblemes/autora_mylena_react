@@ -1,5 +1,5 @@
 import React from 'react';
-import Iconlist from './Iconlist';
+import Iconlist from '../Iconlist/';
 
 const contact = {
     email: 'mylena.andre.cunha@gmail.com',

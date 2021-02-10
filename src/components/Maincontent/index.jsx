@@ -1,5 +1,4 @@
 import React from 'react';
-import '../css/Maincontent.css';
 
 const Maincontent = () => {
     const phone = '../images/smartphonebook2.png';

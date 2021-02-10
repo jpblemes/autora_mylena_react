@@ -1,5 +1,5 @@
 import React from 'react';
-import Bookcarousel from './Bookcarousel';
+import Bookcarousel from '../Bookcarousel/';
 
 const mylena = {
     src: "../images/mylenaphoto.png", 

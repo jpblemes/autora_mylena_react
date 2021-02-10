@@ -1,5 +1,5 @@
 import React from 'react';
-import Imagecolor from './Imagecolor';
+import Imagecolor from '../Imagecolor/';
 
 const Extra = () => {
 

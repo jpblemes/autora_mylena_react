@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { usePdf } from 'react-pdf-js';
-import WithLoading from './common/HOC/WithLoading';
+import WithLoading from '../common/HOC/WithLoading/';
 
 const Pdf = ({pdfurl, setLoading}) => {
     const [page, setPage] = useState(1);

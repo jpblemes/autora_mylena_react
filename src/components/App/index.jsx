@@ -1,15 +1,16 @@
 import React from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Home from './components/Home';
-import Footer from './components/Footer';
-import Booklist from './components/Booklist';
-import Sobremim from './components/Sobremim';
-import Bookpage from './components/Bookpage';
-import Firstchapter from './components/Firstchapter';
+import Header from '../Header';
+import Home from '../Home';
+import Footer from '../Footer';
+import Booklist from '../Booklist';
+import Sobremim from '../Sobremim';
+import Bookpage from '../Bookpage';
+import Firstchapter from '../Firstchapter';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Extra from './components/Extra';
-import Booksummary from './components/Booksummary';
+import Extra from '../Extra';
+import Booksummary from '../Booksummary';
+import './styles.css'
 
 const logo = {
     url: './images/mylena.png',

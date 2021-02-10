@@ -1,6 +1,6 @@
 import React from 'react';
-import Maincontent from './Maincontent';
-import Readerlist from './Readerlist';
+import Maincontent from '../Maincontent/';
+import Readerlist from '../Readerlist/';
 
 const readers = [
     {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Readercard from './Readercard';
+import Readercard from '../Readercard/';
 
 const Readerlist = ({readers}) => {
     const allreaders = readers.map((reader) => {

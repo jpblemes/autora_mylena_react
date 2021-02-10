@@ -1,6 +1,5 @@
 import React from 'react';
 import { HashRouter as Router, Link } from 'react-router-dom';
-import '../css/Maincontent.css';
 
 const Bookcard = ({book}) => {
 
