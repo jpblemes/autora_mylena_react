@@ -1,18 +1,8 @@
 import React from 'react';
 import { HashRouter as Router, Link } from 'react-router-dom';
+import {titleStyle, bgStyle} from './styles'
 
 const Bookpage = ({book}) => {
-
-    const titlestyle = {
-        textAlign: 'center',
-        fontSize: '20px'
-    }
-    const style = {
-        backgroundColor: '#cbbce6',
-        boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-        WebkitBoxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
-        MozBoxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
-    }
 
     const amazonbutton = () => {
         if(book.amazonurl !== ''){
@@ -134,9 +124,9 @@ const Bookpage = ({book}) => {
     return(
         <div className="ui container">
             <br/>
-            <div style={style} className="ui fluid card">
+            <div style={bgStyle} className="ui fluid card">
                 <div className="content">
-                    <div style={titlestyle}className="header">
+                    <div style={titleStyle}className="header">
                         <h2>{book.title}</h2>
                     </div>
                     <br/><br/>

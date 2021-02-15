@@ -1,21 +1,8 @@
 import React from 'react';
-import Imagecolor from '../Imagecolor/';
+import Imagecolor from '../common/Imagecolor';
+import {map, coloredMap, cardladra, quizlink} from './styles'
 
-const Extra = () => {
-
-    const map = {
-        src:"../images/map_a_ladra.png",
-        alt:'Um mapa preto e branco de a ladra.'
-    }
-    const coloredMap = {
-        src:"../images/colored_map_a_ladra.png",
-        alt:'Um mapa colorido de a ladra.'
-    }
-    const cardladra = {
-        src:"../images/card_a_ladra.png",
-        alt:'Uma imagem da do livro a ladra de dois mundos.'
-    }
-    const quizlink='https://pt.quizur.com/quiz/voce-sabe-tudo-sobre-a-ladra-de-dois-mundos-CNF2'
+const Extracontent = () => {
 
     return(
         <div style={{textAlign: 'center'}} className="ui cenred container">
@@ -33,11 +20,9 @@ const Extra = () => {
             <div className="ui medium image">
                 <img src={cardladra.src} alt={cardladra.alt}/>
             </div>
-            
-
         </div>
     );
     
 }
 
-export default Extra;
+export default Extracontent;

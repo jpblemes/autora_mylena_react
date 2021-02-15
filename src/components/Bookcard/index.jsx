@@ -1,16 +1,9 @@
 import React from 'react';
 import { HashRouter as Router, Link } from 'react-router-dom';
+import {titleStyle, textStyle} from './styles'
 
 const Bookcard = ({book}) => {
 
-    const titlestyle = {
-        textAlign: 'center',
-        fontSize: '18px'
-    }
-    const textstyle = {
-        textAlign: 'center',
-        fontSize: '15px'
-    }
     return(
         <div className="ui container">
         <div style={{backgroundColor: '#cbbce6'}} className="ui fluid card">
@@ -24,12 +17,12 @@ const Bookcard = ({book}) => {
                         />
                     </div>
                     <div>
-                        <div style={titlestyle}className="header">
+                        <div style={titleStyle}className="header">
                             <h2>{book.title}</h2>
                         </div>
                         <br/>
-                        <div style={textstyle}>
-                            <p style={{fontSize: '16px'}}>{book.subtitle}</p>
+                        <div style={textStyle}>
+                            <p>{book.subtitle}</p>
                         </div>
                         <div style={{marginTop: '20px'}}>
                             <Router>

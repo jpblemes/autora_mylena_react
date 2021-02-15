@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Loader from '../../../Loader';
+import Loader from '../../Loader/';
 
 const withLoading = (Component) => {
     return function WithLoading(props) {

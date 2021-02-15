@@ -1,23 +1,8 @@
 import React from 'react';
+import {phone, amazonurl, bgstyle, titlestyle, textstyle} from './styles'
 
 const Maincontent = () => {
-    const phone = '../images/smartphonebook2.png';
-    const amazonurl='https://www.amazon.com.br/Rebelde-Dois-Mundos-convencida-destino-ebook/dp/B08P94FNF3'
-    const bgimg = '../images/background.png';
-    const bgstyle = { 
-        backgroundImage: `url(${bgimg})`,
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat',
-    }
-    const titlestyle = {
-        textAlign: 'center',
-        fontSize: '20px'
-    }
-    const textstyle = {
-        textAlign: 'center',
-        fontSize: '15px'
-    }
+
     return(
         <div className="ui container">
         <div style={bgstyle} className="ui fluid card">

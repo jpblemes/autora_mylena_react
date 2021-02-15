@@ -1,5 +1,5 @@
 import React from 'react';
-import Pdf from '../Pdf/';
+import Pdf from '../common/Pdf/';
  
 const Firstchapter = ({pdfurl}) => {
     return (

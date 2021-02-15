@@ -1,17 +1,12 @@
 import React, {useState} from 'react';
 import { HashRouter as Router, Link } from 'react-router-dom';
+import {titleStyle, bgStyle} from './styles'
 
 const Book = ({book}) => {
     const [hovered, setHovered] = useState(false);
 
-    const titlestyle = {
-        textAlign: 'center',
-        fontSize: '16px',
-        marginTop: '12px',
-    }
-
     return (
-        <div style={{backgroundColor: 'transparent', boxShadow: 'none', marginTop: '20px'}} className="ui black card">
+        <div style={bgStyle} className="ui black card">
             <Router>
                 <Link to={book.nameurl} className="ui centered small image">  
                     <img 
@@ -24,7 +19,7 @@ const Book = ({book}) => {
                         }}
                     />
                 </Link>
-                <div style={titlestyle}>
+                <div style={titleStyle}>
                     <h4 className="header">{book.title}</h4>
                 </div> 
             </Router> 
