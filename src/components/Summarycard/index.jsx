@@ -3,11 +3,11 @@ import {style} from './styles'
 
 const Summarycard = ({reader}) => {
 
-    const readersummary = reader.texts.map((text) => {
+    const readersummary = reader.texts.map((text, i) => {
         return(
             <p 
                 style={{textAlign: 'center', fontSize: '15px'}} 
-                key={reader.id}>
+                key={i}>
                 {text}
             </p>
         );
