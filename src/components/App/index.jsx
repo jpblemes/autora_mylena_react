@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Redirect, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Header from '../Header';
 import Home from '../Home';
 import Footer from '../Footer';
@@ -20,25 +20,28 @@ import Notfound from '../Notfound';
     const firstchapterroute = (book) => {
         if(book.pdfurl !== ''){
             return (
-                <Route         
-                    path={`${book.nameurl}-primeiro_capitulo`}
-                    exact 
-                    component={() => <Firstchapter pdfurl={book.pdfurl}/>}
-                />
+                <>
+                    <Route         
+                        path={`${book.nameurl}-primeiro_capitulo`}
+                        exact 
+                        component={() => <Firstchapter pdfurl={book.pdfurl}/>}
+                    />
+                </>
             )
         }  
     }
     const bookpageroute = (book) => {
         return (
-            <Route
-                path={book.nameurl} 
-                exact 
-                component={() => <Bookpage book={book}/>}
-            />
+            <>
+                <Route
+                    path={book.nameurl} 
+                    exact 
+                    component={() => <Bookpage book={book}/>}
+                />
+            </>
         )
         
     }
-
 
     const getBookSummary = (book) => {
         const booksummaries = []
@@ -54,22 +57,24 @@ import Notfound from '../Notfound';
         const booksummaries = getBookSummary(book)
         if (booksummaries.length > 0){
             return (
-                <Route
-                path={`${book.nameurl}-summary`}
-                    exact 
-                    component={() => <Booksummary booksummaries={booksummaries}/>}
-                />
+                <>
+                    <Route
+                        path={`${book.nameurl}-summary`}
+                        exact 
+                        component={() => <Booksummary booksummaries={booksummaries}/>}
+                    />
+                </>
             );
         }
     }
 
     const bookpages = allbooks.map((book) => {
         return(
-            <div key={book.id}>
+            <React.Fragment key={book.id}>
                 {bookpageroute(book)}
                 {firstchapterroute(book)}
                 {summaryroute(book)}
-            </div>  
+            </React.Fragment>
         );
     });
     return (
@@ -78,7 +83,7 @@ import Notfound from '../Notfound';
             <Header />
                 <div style={{backgroundColor: colors.lightGray}}>
                     <br/>
-                    <Switch>
+                    {/* <Switch> */}
                         <Route path="/" exact component={Home}/>
                         <Route path={'/not-found'} exact component={Notfound} />
                         <Route 
@@ -93,8 +98,8 @@ import Notfound from '../Notfound';
                         />
                         <Route path="/extras" exact component={Extracontent}/>
                         {bookpages}    
-                        <Redirect to={'/not-found'} />
-                    </Switch>
+                        {/* <Redirect to={'/not-found'} />
+                    </Switch> */}
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
             <Footer/>
