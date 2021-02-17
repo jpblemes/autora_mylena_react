@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 import Header from '../Header';
 import Home from '../Home';
 import Footer from '../Footer';
@@ -13,6 +13,7 @@ import Booksummary from '../Booksummary';
 import './styles.css'
 import {logo, allbooks, allsummaries} from './data'
 import colors from '../../config/colors'
+import Notfound from '../Notfound';
 
  const App = () => {
 
@@ -72,28 +73,32 @@ import colors from '../../config/colors'
         );
     });
     return (
-        <Router>
+        <>
             <img className="ui centered medium image" src={logo.url} alt={logo.alt}></img>
             <Header />
                 <div style={{backgroundColor: colors.lightGray}}>
                     <br/>
-                    <Route path="/" exact component={Home}/>
-                    <Route 
-                        path="/meuslivros" 
-                        exact
-                        component={() => <Booklist allbooks={allbooks}/>}
-                    />
-                    <Route 
-                        path="/sobremim" 
-                        exact 
-                        component={() => <Aboutme allbooks={allbooks}/>}
-                    />
-                    <Route path="/extras" exact component={Extracontent}/>
-                    {bookpages}
+                    <Switch>
+                        <Route path="/" exact component={Home}/>
+                        <Route path={'/not-found'} exact component={Notfound} />
+                        <Route 
+                            path="/meuslivros" 
+                            exact
+                            component={() => <Booklist allbooks={allbooks}/>}
+                        />
+                        <Route 
+                            path="/sobremim" 
+                            exact 
+                            component={() => <Aboutme allbooks={allbooks}/>}
+                        />
+                        <Route path="/extras" exact component={Extracontent}/>
+                        {bookpages}    
+                        <Redirect to={'/not-found'} />
+                    </Switch>
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
             <Footer/>
-        </Router>
+        </>
     );
 };
 
