@@ -1,6 +1,7 @@
 import React from 'react';
 import Iconlist from '../Iconlist/';
 import {contact, socialmedia, centervertically} from './styles'
+import colors from '../../config/colors'
 
 function Footer() {
     return (
@@ -23,7 +24,7 @@ function Footer() {
                     </div>    
                 </div>
             </div>
-            <div style={{backgroundColor: '#ededed'}} className="ui vertical footer segment">
+            <div style={{backgroundColor: colors.lightGray}} className="ui vertical footer segment">
                 <h4 style={{textAlign: 'center'}}>© 2021 Mylena Aladim</h4> 
             </div>
         </div>

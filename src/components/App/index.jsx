@@ -12,6 +12,7 @@ import Extracontent from '../Extracontent';
 import Booksummary from '../Booksummary';
 import './styles.css'
 import {logo, allbooks, allsummaries} from './data'
+import colors from '../../config/colors'
 
  const App = () => {
 
@@ -74,7 +75,7 @@ import {logo, allbooks, allsummaries} from './data'
         <Router>
             <img className="ui centered medium image" src={logo.url} alt={logo.alt}></img>
             <Header />
-                <div style={{backgroundColor: '#ededed'}}>
+                <div style={{backgroundColor: colors.lightGray}}>
                     <br/>
                     <Route path="/" exact component={Home}/>
                     <Route 

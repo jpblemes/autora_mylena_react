@@ -1,3 +1,5 @@
+import colors from '../../config/colors'
+
 export const mylena = {
     src: "../images/mylenaphoto.png", 
     alt: "A photo of Mylena Aladim",
@@ -25,7 +27,7 @@ export const allabout =[
 ]
 
 export const style = {
-    backgroundColor: '#cbbce6',
+    backgroundColor: colors.lightPurple,
     boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
     WebkitBoxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
     MozBoxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)',
