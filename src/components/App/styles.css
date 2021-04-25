@@ -20,15 +20,10 @@
     format("opentype");
 }
 
-@font-face {
-  font-family: OpenSansCondensed-Light;
-  src: url("../../assets/fonts/OpenSansCondensed-Light.ttf") format("opentype");
-}
-
 body {
   margin: 0;
-  font-family: OpenSansCondensed-Light, sans-serif;
-  font-size: 17px !important;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
