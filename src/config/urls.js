@@ -1,9 +1,10 @@
 export default Object.freeze({
-    root: '/',
-    home: '/home',
-    mybooks: '/meuslivros',
-    aboutme: '/sobremim',
-    extras: '/extras',
-    characterDetails: '/characters/:id',
-    notFound: '/not-found',
-  });
+  root: "/",
+  myBooks: "/meuslivros",
+  aboutMe: "/sobremim",
+  extras: "/extras",
+  bookPage: "/meuslivros/:id",
+  bookSummary: "/meuslivros/:id/summary",
+  bookPdf: "/meuslivros/:id/primeiro_capitulo",
+  notFound: "/not-found",
+});

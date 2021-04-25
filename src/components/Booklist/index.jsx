@@ -1,18 +1,17 @@
-import React from 'react';
-import Book from '../Book/';
-import { HashRouter as Router } from 'react-router-dom';
+import React from "react";
+import Book from "../Book/";
+import { getBooks } from "../../services/fakeBookService";
 
-const Booklist = ({allbooks}) => {
+const Booklist = () => {
+  const allbooks = getBooks();
 
-    const books = allbooks.map((book) => {
-        return(
-            <Router key={book.id}>
-                <Book book={book}/>
-            </Router>
-        );
-    });
-    
-    return <div className="ui container three doubling stackable cards">{books}</div>;
-}
+  const books = allbooks.map((book) => {
+    return <Book key={book.id} book={book} />;
+  });
+
+  return (
+    <div className="ui container three doubling stackable cards">{books}</div>
+  );
+};
 
 export default Booklist;
