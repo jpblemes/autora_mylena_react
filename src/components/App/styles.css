@@ -1,13 +1,43 @@
-.carousel .slide{ 
-     background: none !important;
+.carousel .slide {
+  background: none !important;
 }
 
-@media (min-width: 670px)
-{
-  .marginPhoto
-   {
-        margin-right: 10rem;
-        margin-bottom: 1rem;
-   }
+@media (min-width: 670px) {
+  .marginPhoto {
+    margin-right: 10rem;
+    margin-bottom: 1rem;
+  }
 }
 
+@font-face {
+  font-family: Elsie-Regular;
+  src: url("../../assets/fonts/Elsie-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: MrsSaintDelafield-Regular;
+  src: url("../../assets/fonts/MrsSaintDelafield-Regular.ttf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: OpenSansCondensed-Light;
+  src: url("../../assets/fonts/OpenSansCondensed-Light.ttf") format("opentype");
+}
+
+body {
+  margin: 0;
+  font-family: OpenSansCondensed-Light, sans-serif;
+  font-size: 15px !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Elsie-Regular, sans-serif !important;
+}

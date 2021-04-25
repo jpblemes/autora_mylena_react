@@ -1,8 +1,7 @@
 export const titleStyle = {
-    textAlign: 'center',
-    fontSize: '18px'
-}
+  textAlign: "center",
+  fontSize: "18px",
+};
 export const textStyle = {
-    textAlign: 'center',
-    fontSize: '16px'
-}
+  textAlign: "center",
+};

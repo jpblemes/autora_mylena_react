@@ -5,7 +5,6 @@ import { mylena, allabout, style } from "./styles";
 const Aboutme = () => {
   const titlestyle = {
     textAlign: "center",
-    fontSize: "20px",
   };
 
   const aboutmylena = allabout.map((about) => {
@@ -14,7 +13,6 @@ const Aboutme = () => {
         style={{
           textAlign: "justify",
           textJustify: "inter-word",
-          fontSize: "15px",
         }}
         key={about.id}
       >

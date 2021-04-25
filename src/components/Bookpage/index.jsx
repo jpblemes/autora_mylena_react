@@ -186,7 +186,6 @@ const Bookpage = (props) => {
               style={{
                 textAlign: "justify",
                 textJustify: "inter-word",
-                fontSize: "15px",
               }}
             >
               {book.summary}
