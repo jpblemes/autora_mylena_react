@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HashRouter as Router, Link } from "react-router-dom";
 import { titleStyle, bgStyle } from "./styles";
 import { getBook } from "../../services/fakeBookService";
@@ -15,6 +15,10 @@ const Bookpage = (props) => {
     history.replace(url.notFound);
     window.location.reload();
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const amazonbutton = () => {
     if (book.amazonurl !== "") {
