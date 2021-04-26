@@ -10,7 +10,12 @@ const Booklist = () => {
   });
 
   return (
-    <div className="ui container three doubling stackable cards">{books}</div>
+    <div
+      style={{ marginTop: "15px" }}
+      className="ui container three doubling stackable cards"
+    >
+      {books}
+    </div>
   );
 };
 
