@@ -11,7 +11,7 @@ const Booklist = () => {
 
   return (
     <div
-      style={{ marginTop: "15px" }}
+      style={{ marginTop: "15px", paddingTop: "10px" }}
       className="ui container three doubling stackable cards"
     >
       {books}
