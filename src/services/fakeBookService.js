@@ -66,30 +66,30 @@ const books = [
     skooburl: "https://www.skoob.com.br/share/book/11680095/11695407",
     spotfyurl: "",
   },
-  {
-    id: 4,
-    title: "Violeta é a Cor do Verão",
-    subtitle: "Os anos passam e o confronto com o passado é inevitável",
-    author: "Mylena Aladim",
-    imageurl: "../images/violeta_e_a_cor_do_verao.png",
-    alt: "Livro: Violeta é a Cor do Verão",
-    pdfurl: "",
-    extra: "",
-    description: `Tuka nunca foi conhecida por ser delicada, muito pelo contrário. Onde ela entra não há margem para dúvidas quanto a sua presença. Dante logo percebeu. Aquele garoto amante de música e carros - mas não qualquer música: rock; e não qualquer instrumento músical: bateria - não teve chance alguma quando a garota da pulseira violeta apareceu na oficina mecânica. Depois desse verão tudo mudou para os dois, e não foi para melhor. 
-                Os anos passam e o confronto com o passado é inevitável, mas os tempos são outros e as cicatrizes existem.
-                Para ela, ele é a personificação da frase "Deus me livre, mas quem me dera".
-                Para ele, ela é a personificação da música "Complicada e perfeitinha".`,
-    summary: `Tuka nunca foi conhecida por ser delicada, muito pelo contrário. Onde ela entra não há margem para dúvidas quanto a sua presença. Dante logo percebeu. Aquele garoto amante de música e carros - mas não qualquer música: rock; e não qualquer instrumento músical: bateria - não teve chance alguma quando a garota da pulseira violeta apareceu na oficina mecânica. Depois desse verão tudo mudou para os dois, e não foi para melhor. 
-                    Os anos passam e o confronto com o passado é inevitável, mas os tempos são outros e as cicatrizes existem.
-                    Para ela, ele é a personificação da frase "Deus me livre, mas quem me dera".
-                    Para ele, ela é a personificação da música "Complicada e perfeitinha".`,
-    wattpadurl:
-      "https://www.wattpad.com/story/235945511-violeta-%C3%A9-a-cor-do-ver%C3%A3o",
-    amazonurl: "",
-    readerssummary: false,
-    skooburl: "",
-    spotfyurl: "",
-  },
+  // {
+  //   id: 4,
+  //   title: "Violeta é a Cor do Verão",
+  //   subtitle: "Os anos passam e o confronto com o passado é inevitável",
+  //   author: "Mylena Aladim",
+  //   imageurl: "../images/violeta_e_a_cor_do_verao.png",
+  //   alt: "Livro: Violeta é a Cor do Verão",
+  //   pdfurl: "",
+  //   extra: "",
+  //   description: `Tuka nunca foi conhecida por ser delicada, muito pelo contrário. Onde ela entra não há margem para dúvidas quanto a sua presença. Dante logo percebeu. Aquele garoto amante de música e carros - mas não qualquer música: rock; e não qualquer instrumento músical: bateria - não teve chance alguma quando a garota da pulseira violeta apareceu na oficina mecânica. Depois desse verão tudo mudou para os dois, e não foi para melhor.
+  //               Os anos passam e o confronto com o passado é inevitável, mas os tempos são outros e as cicatrizes existem.
+  //               Para ela, ele é a personificação da frase "Deus me livre, mas quem me dera".
+  //               Para ele, ela é a personificação da música "Complicada e perfeitinha".`,
+  //   summary: `Tuka nunca foi conhecida por ser delicada, muito pelo contrário. Onde ela entra não há margem para dúvidas quanto a sua presença. Dante logo percebeu. Aquele garoto amante de música e carros - mas não qualquer música: rock; e não qualquer instrumento músical: bateria - não teve chance alguma quando a garota da pulseira violeta apareceu na oficina mecânica. Depois desse verão tudo mudou para os dois, e não foi para melhor.
+  //                   Os anos passam e o confronto com o passado é inevitável, mas os tempos são outros e as cicatrizes existem.
+  //                   Para ela, ele é a personificação da frase "Deus me livre, mas quem me dera".
+  //                   Para ele, ela é a personificação da música "Complicada e perfeitinha".`,
+  //   wattpadurl:
+  //     "https://www.wattpad.com/story/235945511-violeta-%C3%A9-a-cor-do-ver%C3%A3o",
+  //   amazonurl: "",
+  //   readerssummary: false,
+  //   skooburl: "",
+  //   spotfyurl: "",
+  // },
 ];
 
 export function getBooks() {
