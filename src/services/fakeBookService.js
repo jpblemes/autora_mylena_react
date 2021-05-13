@@ -1,7 +1,15 @@
+const series = [
+  {
+    id: 1,
+    name: "Série: A Ladra de Dois Mundos",
+  },
+];
+
 const books = [
   {
     id: 1,
     title: "A Ladra de Dois Mundos",
+    serie: "Série: A Ladra de Dois Mundos",
     subtitle: "Todo crime tem um preço e ela está prestes a pagar pelo seu",
     author: "Mylena Aladim",
     imageurl: "../images/ladra_de_dois_mundos.jpg",
@@ -25,6 +33,7 @@ const books = [
   {
     id: 2,
     title: "A Rebelde de Dois Mundos",
+    serie: "Série: A Ladra de Dois Mundos",
     subtitle: "Uma ladra convencida teve seu destino roubado",
     author: "Mylena Aladim",
     imageurl: "../images/rebelde_de_dois_mundos.jpg",
@@ -94,6 +103,10 @@ const books = [
 
 export function getBooks() {
   return books;
+}
+
+export function getSeries() {
+  return series;
 }
 
 export function getBook(id) {

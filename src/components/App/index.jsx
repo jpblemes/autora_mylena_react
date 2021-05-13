@@ -29,7 +29,7 @@ const App = () => {
         alt={logo.alt}
       ></img>
       <Header />
-      <div style={{ backgroundColor: colors.lightGray, paddingBottom: "15em" }}>
+      <div style={{ backgroundColor: colors.lightGray, paddingBottom: "10em" }}>
         <Switch>
           <Route path={url.bookPage} exact component={Bookpage} />
           <Route path={url.notFound} component={Notfound} />
