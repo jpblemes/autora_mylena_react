@@ -1,10 +1,17 @@
 import React from "react";
-import { phone, amazonurl, bgstyle, titlestyle, textstyle } from "./styles";
+import { hazelPreVenda, amazonurl } from "./styles";
 
 const Maincontent = () => {
   return (
     <div className="ui container">
-      <div style={bgstyle} className="ui fluid card">
+      <div>
+        <img
+          className="ui centered image"
+          src={hazelPreVenda.src}
+          alt={hazelPreVenda.alt}
+        />
+      </div>
+      {/* <div style={bgstyle} className="ui fluid card">
         <div className="content">
           <br />
           <br />
@@ -56,7 +63,7 @@ const Maincontent = () => {
             <br />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
