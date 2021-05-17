@@ -17,20 +17,6 @@ const Books = () => {
   const [pageBooks, setPageBooks] = useState([]);
   const [sortColumn, setSortColumn] = useState({ path: "title", order: "asc" });
 
-  const handleDelete = (book) => {
-    let booksAux = [...books];
-    booksAux = booksAux.filter((m) => m !== book);
-    setBooks(booksAux);
-  };
-
-  const handleLike = (book) => {
-    let booksAux = [...books];
-    let index = booksAux.indexOf(book);
-    booksAux[index] = { ...booksAux[index] };
-    booksAux[index].liked = !booksAux[index].liked;
-    setBooks(booksAux);
-  };
-
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
@@ -74,8 +60,6 @@ const Books = () => {
       <div className="two column row">
         <BooksTable
           pageBooks={pageBooks}
-          onLike={handleLike}
-          onDelete={handleDelete}
           onSort={handleSort}
           sortColumn={sortColumn}
         />
