@@ -5,8 +5,7 @@ const ListGroup = ({ items, textProperty, onItemSelect, selectedItem }) => {
     <>
       <div className="ui vertical menu">
         {items.map((item, i) => (
-          <a
-            href="#/"
+          <div
             onClick={() => {
               onItemSelect(item);
             }}
@@ -16,7 +15,7 @@ const ListGroup = ({ items, textProperty, onItemSelect, selectedItem }) => {
             }
           >
             {item[textProperty]}
-          </a>
+          </div>
         ))}
       </div>
     </>
