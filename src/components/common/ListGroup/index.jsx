@@ -6,6 +6,7 @@ const ListGroup = ({ items, textProperty, onItemSelect, selectedItem }) => {
       <div className="ui vertical menu">
         {items.map((item, i) => (
           <a
+            href="#/"
             onClick={() => {
               onItemSelect(item);
             }}
@@ -18,23 +19,6 @@ const ListGroup = ({ items, textProperty, onItemSelect, selectedItem }) => {
           </a>
         ))}
       </div>
-      {/* <ul className="list-group">
-        {items.map((item, i) => (
-          <li
-            onClick={() => {
-              onItemSelect(item);
-            }}
-            key={i}
-            className={
-              item.id === selectedItem.id
-                ? "list-group-item active"
-                : "list-group-item"
-            }
-          >
-            {item[textProperty]}
-          </li>
-        ))}
-      </ul> */}
     </>
   );
 };

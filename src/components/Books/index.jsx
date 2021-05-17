@@ -5,7 +5,6 @@ import ListGroup from "../common/ListGroup";
 import { paginate } from "../utils/paginate";
 import BooksTable from "../BooksTable";
 import _ from "lodash";
-import ButtonLink from "../common/ButtonLink";
 
 const Books = () => {
   const allBooks = getBooks();
@@ -23,8 +22,6 @@ const Books = () => {
     booksAux = booksAux.filter((m) => m !== book);
     setBooks(booksAux);
   };
-
-  const handleBookSelection = (book) => {};
 
   const handleLike = (book) => {
     let booksAux = [...books];

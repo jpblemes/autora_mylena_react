@@ -1,10 +1,8 @@
 import React from "react";
-import Like from "../common/Like";
 import Table from "../common/Table";
 import IconLink from "../common/IconLink";
-import colors from "../../config/colors";
-/*to={`/meuslivros/${book.id}/summary`}*/
-const BooksTable = ({ pageBooks, onDelete, onLike, onSort, sortColumn }) => {
+
+const BooksTable = ({ pageBooks, onSort, sortColumn }) => {
   const columns = [
     { path: "title", label: "Título" },
     {
