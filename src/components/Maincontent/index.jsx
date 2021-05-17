@@ -1,5 +1,5 @@
 import React from "react";
-import { hazelPreVenda, amazonurl } from "./styles";
+import { hazelPreVenda } from "./styles";
 
 const Maincontent = () => {
   return (

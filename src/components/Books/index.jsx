@@ -7,10 +7,9 @@ import BooksTable from "../BooksTable";
 import _ from "lodash";
 
 const Books = () => {
-  const allBooks = getBooks();
+  const books = getBooks();
   const pageSize = 4;
   const genres = [{ id: 0, name: "Todos os livros" }, ...getSeries()];
-  const [books, setBooks] = useState(allBooks);
   const [filtered, setFiltered] = useState(books);
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedGenre, setSelectedGenre] = useState(genres[0]);
