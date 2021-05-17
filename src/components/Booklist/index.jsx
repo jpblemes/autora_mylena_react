@@ -1,10 +1,13 @@
 import React from "react";
 import Books from "../Books";
+import { background } from "./styles";
 
 const Booklist = () => {
   return (
-    <div className="ui container">
-      <Books />
+    <div style={background}>
+      <div style={{ paddingBottom: "150px" }} className="ui container">
+        <Books />
+      </div>
     </div>
   );
 };
