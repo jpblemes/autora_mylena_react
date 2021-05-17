@@ -3,7 +3,7 @@ import React from "react";
 const ListGroup = ({ items, textProperty, onItemSelect, selectedItem }) => {
   return (
     <>
-      <div class="ui vertical menu">
+      <div className="ui vertical menu">
         {items.map((item, i) => (
           <a
             onClick={() => {
