@@ -14,8 +14,8 @@ const TableHeader = ({ onSort, columns, sortColumn }) => {
 
   const renderSortIcon = (column) => {
     if (column.path !== sortColumn.path) return null;
-    if (sortColumn.order === "asc") return <i className="fa fa-sort-asc"></i>;
-    return <i className="fa fa-sort-desc"></i>;
+    if (sortColumn.order === "asc") return <i className="caret up icon"></i>;
+    return <i className="caret down icon"></i>;
   };
   return (
     <thead>
