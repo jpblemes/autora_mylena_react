@@ -1,13 +1,14 @@
 import React from "react";
 import Table from "../common/Table";
-import IconLink from "../common/IconLink";
+import { Link } from "react-router-dom";
 
 const BooksTable = ({ pageBooks, onSort, sortColumn }) => {
   const columns = [
-    { path: "title", label: "Título" },
     {
+      path: "title",
+      label: "Título",
       content: (book) => (
-        <IconLink link={`/meuslivros/${book.id}`} icon="search" />
+        <Link to={`/meuslivros/${book.id}`}>{book.title}</Link>
       ),
     },
   ];
