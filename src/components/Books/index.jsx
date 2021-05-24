@@ -62,13 +62,13 @@ const Books = () => {
           onSort={handleSort}
           sortColumn={sortColumn}
         />
-        <Pagination
-          itemsCount={filtered.length}
-          pageSize={pageSize}
-          currentPage={currentPage}
-          onPageChange={handlePageChange}
-        />
       </div>
+      <Pagination
+        itemsCount={filtered.length}
+        pageSize={pageSize}
+        currentPage={currentPage}
+        onPageChange={handlePageChange}
+      />
     </div>
   );
 };
